@@ -10,7 +10,7 @@
   --text-color: #5B7B78;
   --body-color: #F5FFFE;
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: "Poppins", sans-serif;
   --biggest-font-size: 3rem;
   --big-font-size: 1.25rem;
   --normal-font-size: .938rem;
@@ -40,13 +40,16 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: #191919;
 }
 
-h1, h2, ul, p {
+h1, h2, ul {
   margin: 0;
 }
 
+p {
+  color: #616161;
+}
 ul {
   padding: 0;
   list-style: none;
@@ -69,6 +72,7 @@ img {
 /*========== LAYOUT ==========*/
 .main {
   position: relative;
+  background-color: white;
 }
 
 .bd-container {
@@ -195,7 +199,7 @@ img {
   align-items: center;
   padding: 1rem 1.5rem;
   background-color: var(--body-color);
-  color: var(--first-color);
+  color: #A9885F;
   border-radius: .5rem;
   font-weight: var(--font-medium);
 }
@@ -225,7 +229,7 @@ img {
 
 .islands__video-icon {
   font-size: 1.8rem;
-  color: var(--first-color);
+  color: #A9885F;
 }
 
 .islands__popup {
