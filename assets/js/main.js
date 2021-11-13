@@ -24,6 +24,11 @@ let galleryTop = new Swiper('.gallery-top', {
     effect: 'fade',
     loop: true,
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
     thumbs: {
         swiper: galleryThumbs
     }
@@ -88,6 +93,8 @@ btnCloseVideo.addEventListener('click', ()=> {
 
 /*==================== GSAP ANIMATION ====================*/
 const controlImg = document.querySelectorAll('.controls__img')
+const controlNext = document.querySelectorAll('.swiper-button-next')
+const controlPrev = document.querySelectorAll('.swiper-button-prev')
 
 function scrollAnimation(){
     gsap.from('.islands__subtitle', {opacity: 0, duration: .2, delay: .2, y: -20})
@@ -100,3 +107,5 @@ function scrollAnimation(){
 }
 
 controlImg.forEach(c => c.addEventListener('click', scrollAnimation))
+controlNext.forEach(c => c.addEventListener('click', scrollAnimation))
+controlPrev.forEach(c => c.addEventListener('click', scrollAnimation))
