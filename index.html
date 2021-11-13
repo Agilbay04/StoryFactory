@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--========== BOOTSTRAP ==========-->
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
         <!--========== BOX ICONS ==========-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
@@ -20,24 +20,11 @@
     <body>
         <!--========== HEADER ==========-->
         <header class="header">
-            <!-- <nav class="nav bd-container">
-                <a href="#" class="nav__logo">Travel</a>
-                
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link swiper-slide">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link swiper-slide">About Us</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link swiper-slide">Project</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link swiper-slide">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav> -->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-                <a class="navbar-brand" href="#">Navbar</a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" width="50" class="d-inline-block align-top" alt="">
+                    Story Factory
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -45,24 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#" data-scroll-nav="0">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="nav-link" href="#" data-scroll-nav="1">About us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
+                            <a class="nav-link" href="#" data-scroll-nav="2">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact us</a>
                         </li>
                     </ul>
                 </div>
@@ -74,7 +53,7 @@
             <div class="swiper-container gallery-top">
                 <div class="swiper-wrapper">
                     <!--========== ISLANDS 1 ==========-->
-                    <section class="islands swiper-slide">
+                    <section class="islands swiper-slide" data-scroll-index="0">
                         <img src="assets/img/img-1.jpg" alt="" class="islands__bg">
 
                         <div class="islands__container bd-container">
@@ -82,7 +61,7 @@
                                 <h2 class="islands__subtitle">Islands</h2>
                                 <h1 class="islands__title">Bora Bora</h1>
                                 <p class="islands__description">Small South Pacific island northwest of Tahiti in French Polynesia, surrounded by motus.</p>
-                                <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                                <a href="#" class="btn islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                             </div>
 
                             <div class="islands__video">
@@ -94,7 +73,7 @@
                     </section>
         
                     <!--========== ISLANDS 2 ==========-->
-                    <section class="islands swiper-slide">
+                    <section class="islands swiper-slide"  data-scroll-index="1">
                         <img src="assets/img/img-2.jpg" alt="" class="islands__bg">
 
                         <div class="islands__container bd-container">
@@ -102,7 +81,7 @@
                                 <h2 class="islands__subtitle">Islands</h2>
                                 <h1 class="islands__title">Bali</h1>
                                 <p class="islands__description">It is an Indonesian island known and beautiful for its lush active volcanic mountains.</p>
-                                <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                                <a href="#" class="btn islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                             </div>
 
                             <div class="islands__video">
@@ -114,7 +93,7 @@
                     </section>
                     
                     <!--========== ISLANDS 3 ==========-->
-                    <section class="islands swiper-slide">
+                    <section class="islands swiper-slide"  data-scroll-index="2">
                         <img src="assets/img/img-3.jpg" alt="" class="islands__bg">
 
                         <div class="islands__container bd-container">
@@ -122,7 +101,7 @@
                                 <h2 class="islands__subtitle">Islands</h2>
                                 <h1 class="islands__title">Palawan</h1>
                                 <p class="islands__description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
-                                <a href="#" class="islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
+                                <a href="#" class="btn islands__button">Explore <i class='bx bx-right-arrow-alt islands__button-icon'></i></a>
                             </div>
 
                             <div class="islands__video">
@@ -155,9 +134,14 @@
                 </div>
             </div>
         </main>
+        <!--========== JQUERY JS ==========-->
+        <script src="assets/js/jquery.min.js"></script>
+
+        <!--========== SCROLLIT JS ==========-->
+        <script src="assets/js/scrollIt.min.js"></script>
 
         <!--========== BOOTSTRAP ==========-->
-        <script src="/assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
 
         <!--========== GSAP ==========-->
         <script src="assets/js/gsap.min.js"></script>
