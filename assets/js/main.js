@@ -24,10 +24,56 @@ let galleryTop = new Swiper('.gallery-top', {
     effect: 'fade',
     loop: true,
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
     thumbs: {
         swiper: galleryThumbs
     }
 })
+
+/*==================== FILTER - ISOTOPE JS ====================*/
+const gridCheck = document.querySelector('.grid');
+
+if (gridCheck !== null) { 
+	// init Isotope
+	var iso = new Isotope( '.grid', {
+		itemSelector: '.element-item',
+		layoutMode: 'fitRows'
+	});
+
+	// bind filter button click
+	var filtersElem = document.querySelector('.filters-button-group');
+	filtersElem.addEventListener( 'click', function( event ) {
+		// only work with buttons
+		if ( !matchesSelector( event.target, 'button' ) )  {
+			return;
+		}
+		var filterValue = event.target.getAttribute('data-filter');
+		// use matching filter function
+		iso.arrange({ filter: filterValue });
+	});
+	
+	// change is-checked class on buttons
+	var buttonGroups = document.querySelectorAll('.button-group');
+	for ( var i=0, len = buttonGroups.length; i < len; i++ ) {
+		var buttonGroup = buttonGroups[i];
+		radioButtonGroup( buttonGroup );
+	}
+	
+	function radioButtonGroup( buttonGroup ) {
+		buttonGroup.addEventListener( 'click', function( event ) {
+			// only work with buttons
+			if ( !matchesSelector( event.target, 'button' ) )  {
+				return;
+			}
+			buttonGroup.querySelector('.is-checked').classList.remove('is-checked');
+			event.target.classList.add('is-checked');
+		});
+	}
+}
 
 
 /*==================== POPUP ====================*/
@@ -47,6 +93,8 @@ btnCloseVideo.addEventListener('click', ()=> {
 
 /*==================== GSAP ANIMATION ====================*/
 const controlImg = document.querySelectorAll('.controls__img')
+const controlNext = document.querySelectorAll('.swiper-button-next')
+const controlPrev = document.querySelectorAll('.swiper-button-prev')
 
 function scrollAnimation(){
     gsap.from('.islands__subtitle', {opacity: 0, duration: .2, delay: .2, y: -20})
@@ -59,3 +107,5 @@ function scrollAnimation(){
 }
 
 controlImg.forEach(c => c.addEventListener('click', scrollAnimation))
+controlNext.forEach(c => c.addEventListener('click', scrollAnimation))
+controlPrev.forEach(c => c.addEventListener('click', scrollAnimation))
