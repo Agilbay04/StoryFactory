@@ -12,38 +12,47 @@
         <!--========== SWIPER CSS ==========-->
         <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
+        <!--========== LIGHTBOX CSS ==========-->
+        <link rel="stylesheet" href="assets/lightbox/dist/css/lightbox.css">
+
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive Landing Page Islands</title>
+        <title>Story Factory</title>
     </head>
     <body>
         <!--========== HEADER ==========-->
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-between">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                <!-- Logo  -->
                 <a class="navbar-brand" href="#">
                     <img src="assets/img/logo.png" width="50" class="d-inline-block align-top" alt="">
                     Story Factory
                 </a>
+                <!-- Logo -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            
+                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
+                        <!-- Navbar Item -->
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html" data-scroll-nav="0">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" data-scroll-nav="1">About us</a>
-                        </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="portofolio.html" data-scroll-nav="2">Portfolio <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact us</a>
+                            <a class="nav-link" href="#">Service</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="portofolio.html">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <!-- Navbar Item -->
                     </ul>
+                </div>
                 </div>
             </nav>
         </header>
@@ -53,7 +62,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                        <h2 class="h2-heading">Projects That We're Proud Of</h2>
+                        <h2 class="h2-heading">Portofolio</h2>
                     </div> <!-- end of col -->
                 </div> <!-- end of row -->
                 <div class="row">
@@ -66,59 +75,50 @@
                             <button class="button" data-filter=".finance">FINANCE</button>
                             <button class="button" data-filter=".software">SOFTWARE</button>
                         </div> <!-- end of button group -->
-                        <div class="grid">
-                            <div class="element-item finance">
+                        <div class="grid row row-cols-3">
+                            <div class="col element-item finance">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-1.jpg" alt="alternative">
-                                    <p><strong>Online banking</strong> - delivered to and to major company in pharmace ski jump from</p>
+                                    <img class="img-fluid" data-lightbox="image-1" src="assets/img/project-1.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item finance">
+                            <div class="col element-item finance">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-2.jpg" alt="alternative">
-                                    <p><strong>Loans company</strong> - enjoyed minutes related as at on on. Is fanny dried camping today</p>
+                                    <img class="img-fluid" data-lightbox="image-2" src="assets/img/project-2.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item finance">
+                            <div class="col element-item finance">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-3.jpg" alt="alternative">
-                                    <p><strong>Refinance firm</strong> - distrusts an it contented perceived attending oh nouns here</p>
+                                    <img class="img-fluid" data-lightbox="image-3" src="assets/img/project-3.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business finance">
+                            <div class="col element-item business finance">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-4.jpg" alt="alternative">
-                                    <p><strong>Financial products</strong> - thoroughly estimating introduced stimulated why but front</p>
+                                    <img class="img-fluid" data-lightbox="image-4" src="assets/img/project-4.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business finance">
+                            <div class="col element-item business finance">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-5.jpg" alt="alternative">
-                                    <p><strong>Credit cards</strong> - enjoyed minutes related as at on on. Is fanny dried out yesterday</p>
+                                    <img class="img-fluid" data-lightbox="image-5" src="assets/img/project-5.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business software">
+                            <div class="col element-item business software">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-6.jpg" alt="alternative">
-                                    <p><strong>Software robots</strong> - as often me goodness as reserved raptures to mistaken</p>
+                                    <img class="img-fluid" data-lightbox="image-6" src="assets/img/project-6.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business software">
+                            <div class="col element-item business software">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-7.jpg" alt="alternative">
-                                    <p><strong>Company control</strong> - steepest oh screened he gravity he mr sixteen esteems his</p>
+                                    <img class="img-fluid" data-lightbox="image-7" src="assets/img/project-7.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business software">
+                            <div class="col element-item business software">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-8.jpg" alt="alternative">
-                                    <p><strong>Audit reports</strong> - mile home its new way with high told said finished to learn</p>
+                                    <img class="img-fluid" data-lightbox="image-8" src="assets/img/project-8.jpg" alt="alternative">
                                 </a>
                             </div>
-                            <div class="element-item business software">
+                            <div class="col element-item business software">
                                 <a href="article.html">
-                                    <img class="img-fluid" src="assets/img/project-9.jpg" alt="alternative">
-                                    <p><strong>Big business</strong> - no horrible blessing landlord dwelling dissuade if we can hear</p>
+                                    <img class="img-fluid" data-lightbox="image-9" src="assets/img/project-9.jpg" alt="alternative">
                                 </a>
                             </div>
                         </div> <!-- end of grid -->
@@ -139,8 +139,11 @@
         <!--========== BOOTSTRAP ==========-->
         <script src="assets/js/bootstrap.min.js"></script>
 
-                <!--========== SWIPER JS ==========-->
+        <!--========== SWIPER JS ==========-->
         <script src="assets/js/swiper-bundle.min.js"></script>
+
+        <!--========== lIGHTBOX JS ==========-->
+        <script src="assets/lightbox/dist/js/lightbox.js"></script>
         
         <!--========== MAIN JS ==========-->
         <script src="assets/js/main.js"></script>
