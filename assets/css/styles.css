@@ -254,7 +254,7 @@ img {
 }
 
 .islands__subtitle, .islands__title, .islands__description {
-  color: var(--body-color);
+  color: #d8d8d8;
 }
 
 .islands__subtitle {
