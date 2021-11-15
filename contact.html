@@ -1,35 +1,48 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--========== BOOTSTRAP ==========-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<html lang="en">
 
-        <!--========== BOX ICONS ==========-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--========== BOOTSTRAP ==========-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-        <!--========== SWIPER CSS ==========-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
 
-        <!--========== CSS ==========-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    <!--========== SWIPER CSS ==========-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
-        <title>Responsive Landing Page Islands</title>
-    </head>
-    <body>
-        <!--========== HEADER ==========-->
-        <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+    <title>Story Factory</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+            <div class="container">
+                <!-- Logo  -->
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.png" width="50" class="d-inline-block align-top" alt="">
+                    Story Factory
+                </a>
+                <!-- Logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-            
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
+                        <!-- Navbar Item -->
+                        <li class="nav-item">
                             <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
@@ -38,59 +51,77 @@
                         <li class="nav-item">
                             <a class="nav-link" href="portofolio.html">Portfolio</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="contact.html">Contact</a>
                         </li>
+                        <!-- Navbar Item -->
                     </ul>
                 </div>
-                </div>
-            </nav>
-        </header>
-
-        <!--========== MAIN ==========-->
-        <section class="section justify-content-center">
-            <div class="container">
-                <div class="card">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Numquam ullam cum sapiente incidunt, saepe deleniti provident 
-                        consequatur nesciunt ducimus labore quam, perferendis repellat 
-                        commodi magnam excepturi minima doloribus? Illum possimus aperiam 
-                        doloremque adipisci veniam officia voluptate sequi impedit modi quae 
-                        quisquam temporibus, dolorum quasi laboriosam suscipit cum praesentium 
-                        natus provident eius porro voluptatibus reprehenderit commodi? Voluptatibus 
-                        ullam maxime, necessitatibus veniam itaque amet vitae dignissimos atque neque 
-                        repellat, aut aperiam, nesciunt sequi nisi in dolor saepe cumque quasi eaque! Qui, 
-                        molestias necessitatibus non eligendi est quas ipsum molestiae tempora, temporibus 
-                        sed enim vitae voluptatibus id dolor amet quaerat repellat ullam autem corrupti! 
-                        Atque dolore sed iusto nemo animi eos repellendus labore consequuntur, nostrum 
-                        possimus voluptatum, blanditiis similique nulla ipsam, ut quod id voluptatem 
-                        quasi corporis? Distinctio accusantium voluptates animi error. Numquam, iste 
-                        a vitae culpa, deserunt inventore quam quasi doloribus beatae exercitationem 
-                        suscipit provident consequatur eveniet accusamus cumque illum magni ut.
-                    </p>
-                </div>
             </div>
-        </section>
+        </nav>
+    </header>
 
-        <!--========== JQUERY JS ==========-->
-        <script src="assets/js/jquery.min.js"></script>
+    <!--========== MAIN ==========-->
+    <main class="main">
+        <br><br>
+        <div class="container">
+            <div class="pb-5 text-center">
+                <h2 class="font-weight-normal">Contact Details</h2>
+                <p class="font-weight-light">
 
-        <!--========== SCROLLIT JS ==========-->
-        <script src="assets/js/scrollIt.min.js"></script>
+                </p>
+            </div>
 
-        <!--========== BOOTSTRAP ==========-->
-        <script src="assets/js/bootstrap.min.js"></script>
+            <div class="row container">
+                <form class="col">
+                    <div class="form-group row">
+                        <label for="inputNama3" class="col-sm-2 col-form-label">Nama</label>
+                        <div class="col-sm-10">
+                            <input type="nama" class="form-control form-control-lg" id="inputNama3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control form-control-lg" id="inputEmail3">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="exampleFormControlTextarea1" class="col-sm-2 col-form-label">
+                            Pesan
+                        </label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center my-4">
+                        <button type="button" class="btn btn-primary btn-lg">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </main>
+    <!--========== JQUERY JS ==========-->
+    <script src="assets/js/jquery.min.js"></script>
 
-        <!--========== GSAP ==========-->
-        <script src="assets/js/gsap.min.js"></script>
+    <!--========== SCROLLIT JS ==========-->
+    <script src="assets/js/scrollIt.min.js"></script>
 
-        <!--========== ISOTOPE JS ==========-->
-        <script src="assets/js/isotope.pkgd.min.js"></script>
+    <!--========== BOOTSTRAP ==========-->
+    <script src="assets/js/bootstrap.min.js"></script>
 
-        <!--========== SWIPER JS ==========-->
-        <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--========== GSAP ==========-->
+    <script src="assets/js/gsap.min.js"></script>
 
-        <!--========== MAIN JS ==========-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <!--========== ISOTOPE JS ==========-->
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+
+    <!--========== SWIPER JS ==========-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
 </html>
