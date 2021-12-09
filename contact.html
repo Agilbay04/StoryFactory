@@ -3,121 +3,156 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--========== BOOTSTRAP ==========-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- BOOTSTRAPS 5 CSS -->
+    <link rel="stylesheet" href="assets/dist/css/bootstrap/bootstrap.min.css">
+    <!-- \! BOOTSTRAP 5 CSS -->
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="assets/dist/plugins/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/dist/plugins/owlcarousel/owl.theme.default.min.css">
+    <!-- \! OWL CAROUSEL -->
 
-    <title>Story Factory | Contact</title>
+    <!-- STYLE CSS -->
+    <link rel="stylesheet" href="assets/dist/css/style.css">
+    <!-- \!STYLE CSS -->
+    <title>Contact - Story Factory</title>
 </head>
+<style>
+    body {
+        background-image: url("assets/dist/img/contact.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+    }
+
+    .img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        background: rgba(25, 25, 25, 0.7);
+    }
+</style>
 
 <body>
-    <!--========== HEADER ==========-->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+    <div class="img">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
-                <!-- Logo  -->
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" width="50" class="d-inline-block align-top" alt="">
-                    Story Factory
+                <a class="navbar-brand logo" href="index.html">
+                    <img src="assets/dist/img/logo.png" alt="storyfactory" class="d-inline-block align-text-top">
                 </a>
-                <!-- Logo -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Navbar Item -->
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Service</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portofolio.html">Portfolio</a>
+                            <a class="nav-link" href="portfolio.html">Portfolio</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
                         </li>
-                        <!-- Navbar Item -->
+                        <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
-    </header>
+        <!-- \! NAVBAR -->
+        <!-- Content -->
+        <div class="container text-white my-5">
+            <main>
+                <br>
+                <div class="mt-5 text-center">
+                    <h2 class="fw-bold">Hubungi Kami</h2>
+                    <p class="lead">Bebas ajukan pertanyaan apapun, akan kami jawab secepat mungkin!</p>
+                </div>
 
-    <!--========== MAIN ==========-->
-    <!-- Contact -->
-    <div id="contact" class="form-1">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="h2-heading">Contact us</h2>
-                    <p class="p-heading">Of will at sell well at as. Too want but tall nay like old removing yourself
-                        today</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li><i class="fas fa-map-marker-alt"></i> &nbsp;22 Innovative, San Francisco, CA 94043, US</li>
-                        <li><i class="fas fa-phone"></i> &nbsp;<a href="tel:00817202212">+81 720 2212</a></li>
-                        <li><i class="fas fa-envelope"></i> &nbsp;<a href="mailto:contact@site.com">contact@site.com</a>
-                        </li>
-                    </ul>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-10 offset-lg-1">
+                <div class="row justify-content-center g-5">
+                    <!-- Form Contact -->
+                    <div class="col-lg-8">
+                        <form>
+                            <div class="row g-3">
+                                <!-- Input Nama -->
+                                <div class="col-8 mx-auto">
+                                    <label for="nama" class="form-label">Nama</label>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="nama" placeholder="contoh: Albedo Eula"
+                                            autocomplete="off">
+                                    </div>
+                                </div>
+                                <!-- Input Nomor Telepon -->
+                                <div class="col-8 mx-auto">
+                                    <label for="nomor" class="form-label">Nomor Telepon</label>
+                                    <input type="text" class="form-control" id="nomor" placeholder="contoh: 08xxxxxxxx"
+                                        autocomplete="off">
+                                </div>
+                                <!-- Input Pertanyaan -->
+                                <div class="col-8 mx-auto">
+                                    <label for="pertanyaan" class="form-label">Pertanyaan</label>
+                                    <textarea type="text" class="form-control" rows="3" id="pertanyaan"
+                                        placeholder="contoh: Bagaimana cara memesan?" autocomplete="off"></textarea>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 col-2 text-center mx-auto mt-4 pt-2">
+                    <button type="button" class="btn btn-gold">Kirim</button>
+                </div>
+            </main>
+        </div>
+        <!-- Content -->
+    </div>
 
-                    <!-- Contact Form -->
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control-input" placeholder="Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control-input" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control-textarea" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="submit" class="form-control-submit-button">Submit</button>
-                        </div>
-                    </form>
-                    <!-- end of contact form -->
-
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of form-1 -->
-    <!-- end of contact -->
-
-    <!--========== JQUERY JS ==========-->
-    <script src="assets/js/jquery.min.js"></script>
-
-    <!--========== SCROLLIT JS ==========-->
-    <!-- <script src="assets/js/scrollIt.min.js"></script> -->
-
-    <!--========== BOOTSTRAP ==========-->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!--========== GSAP ==========-->
-    <!-- <script src="assets/js/gsap.min.js"></script> -->
-
-    <!--========== ISOTOPE JS ==========-->
-    <!-- <script src="assets/js/isotope.pkgd.min.js"></script> -->
-
-    <!--========== SWIPER JS ==========-->
-    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
-
-    <!--========== MAIN JS ==========-->
-    <script src="assets/js/main.js"></script>
 </body>
+<footer>
+    <!-- JQUERY JS -->
+    <script src="assets/dist/plugins/jquery/jquery.min.js"></script>
+    <!-- \! JQUERY JS -->
+
+    <!-- OWL CAROUSEL JS -->
+    <script src="assets/dist/plugins/owlcarousel/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                items: 1,
+                lazyLoad: true,
+                loop: true,
+            });
+        });
+    </script>
+    <!-- \! OWL CAROUSEL JS -->
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- \! FONT AWESOME  -->
+
+    <!-- BOOTSTRAPS 5 JS -->
+    <script src="assets/dist/js/bootstrap/bootstrap.min.js"></script>
+    <!-- \! BOOTSTRAPS 5 JS -->
+</footer>
 
 </html>
