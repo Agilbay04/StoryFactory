@@ -110,7 +110,7 @@ body {
 
 .carousel-item .fourth-slide {
     top: 10%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .fourth-slide .card {
