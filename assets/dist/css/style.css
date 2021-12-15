@@ -155,6 +155,7 @@ body {
         padding: 4px;
     }
 }
+
 /* END PORTOFOLIO */
 
 /* BUTTON */
@@ -245,6 +246,19 @@ body {
     position: absolute;
     z-index: 1;
     background: rgba(25, 25, 25, 0.7);
+}
+
+.carousel-inner-2 .carousel-item-2 {
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-inner-2 .carousel-item-2::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
 }
 
 .carousel-caption {
@@ -342,6 +356,11 @@ body {
 @media (min-width: 992px) {
     .navbar-nav li {
         padding-right: 1.4rem;
+    }
+
+    .carousel-item .fourth-slide {
+        top: 10%;
+        overflow-y: hidden;
     }
 }
 
